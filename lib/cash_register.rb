@@ -15,12 +15,12 @@ class CashRegister
     && counter < quantity
       @all_items << item
       counter += 1
-    
+    end
     else
       @all_items << item
     end
   end
-end
+
 
 
   
