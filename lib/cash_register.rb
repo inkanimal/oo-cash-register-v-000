@@ -14,7 +14,6 @@ class CashRegister
     if counter < quantity
     @all_items << item
     counter += 1
-  end
     else
       @all_items << item
     end
@@ -43,7 +42,7 @@ class CashRegister
   end
 
 end
-end
+
 
 
 # class CashRegister
