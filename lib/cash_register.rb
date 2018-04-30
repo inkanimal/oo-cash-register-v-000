@@ -27,8 +27,7 @@ class CashRegister
   
   def items
      @cart.flatten
-     @cart[:name_of_item]
-     
+    
   end
 end
 
