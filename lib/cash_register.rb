@@ -37,7 +37,7 @@ class CashRegister
     def items
       @all_items
   end
- end
+end
 
 
 
