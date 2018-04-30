@@ -15,6 +15,9 @@ class CashRegister
     @all_items << item
     counter += 1
     else
+      @all_items << item
+    end
+  end
     
     # item_specs = {}
     # item_specs[:name_of_item] = item
@@ -32,6 +35,7 @@ class CashRegister
       "After the discount, the total comes to $#{@total}."
     end  
   end
+end
   
   def void_last_transaction
     @total -= @price
