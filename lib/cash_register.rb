@@ -11,7 +11,7 @@ class CashRegister
     @price = price
     @total += price * quantity
     counter = 0
-    while counter < quantity
+    if counter < quantity
     @all_items << item
     counter += 1
     else
