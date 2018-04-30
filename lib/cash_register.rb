@@ -28,7 +28,7 @@ class CashRegister
   def items
      items_list = []
      @cart.each do |item|
-       
+       items_list << item[:name_of_item]
     
   end
 end
