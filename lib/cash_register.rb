@@ -31,7 +31,7 @@ class CashRegister
        list << item[:name_of_item]
     end
   end
-  list
+  
 end
 
  
