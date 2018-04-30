@@ -26,7 +26,7 @@ class CashRegister
   end
   
   def items
-     @cart.flatten
+     @cart.values_at()
     
   end
 end
