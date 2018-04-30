@@ -26,7 +26,9 @@ class CashRegister
   end
   
   def items
-     @cart
+     items_list = []
+     @cart.each do |item|
+       
     
   end
 end
