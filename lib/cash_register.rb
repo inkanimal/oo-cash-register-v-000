@@ -7,32 +7,32 @@ class CashRegister
     @all_items = []
   end
    
-  def add_item(item, price, quantity = 1)
-    @price = price
-    @total += price * quantity
-    counter = 0
-    if counter < quantity
-      @all_items << item
-      counter += 1
-    else
-      @all_items << item
-    end
-  end
+  # def add_item(item, price, quantity = 1)
+  #   @price = price
+  #   @total += price * quantity
+  #   counter = 0
+  #   if counter < quantity
+  #     @all_items << item
+  #     counter += 1
+  #   else
+  #     @all_items << item
+  #   end
+  # end
 
   
-  def apply_discount
-    if @discount == 0 
-      "There is no discount to apply."
-    else
-      @total -= @total * @discount / 100
-      "After the discount, the total comes to $#{@total}."
-    end  
-  end
+  # def apply_discount
+  #   if @discount == 0 
+  #     "There is no discount to apply."
+  #   else
+  #     @total -= @total * @discount / 100
+  #     "After the discount, the total comes to $#{@total}."
+  #   end  
+  # end
 
 #   def void_last_transaction
 #     @total -= @price
 #   end
- end
+ #end
 
 
 
@@ -51,13 +51,14 @@ class CashRegister
     if quantity > 1
       counter = 0
       while counter < quantity
-        @items << item
+        @all_items << item
         counter += 1
       end
     else
-      @items << item
+      @all_items << item
     end
   end
+end
 
   # def apply_discount
   #   if @discount > 0
