@@ -26,7 +26,7 @@ class CashRegister
   end
   
   def items
-     
+     item_specs[:name_of_item]
   end
 end
 
