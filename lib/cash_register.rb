@@ -1,25 +1,25 @@
-# class CashRegister
-#   attr_accessor :total, :discount, :price, :all_items
+class CashRegister
+  attr_accessor :total, :discount, :price, :all_items
  
-#   def initialize(discount = 0)
-#     @total = 0 
-#     @discount = discount
-#     @all_items = []
-#   end
+  def initialize(discount = 0)
+    @total = 0 
+    @discount = discount
+    @all_items = []
+  end
    
-#   def add_item(item, price, quantity = 1)
-#     @price = price
-#     @total += price * quantity
-#     if quantity > 1
-#       counter = 0
-#     while counter < quantity
-#       @all_items << item
-#       counter += 1
-#     end
-#     else
-#       @all_items << item
-#     end
-#   end
+  def add_item(item, price, quantity = 1)
+    @price = price
+    @total += price * quantity
+    if quantity > 1
+      counter = 0
+    while counter < quantity
+      @all_items << item
+      counter += 1
+    end
+    else
+      @all_items << item
+    end
+  end
 
   
 #   def apply_discount
@@ -38,28 +38,28 @@
 
 
 
-class CashRegister
-  attr_accessor :total, :discount, :price, :items
+# class CashRegister
+#   attr_accessor :total, :discount, :price, :items
 
-  def initialize(discount = 0)
-    @total = 0
-    @discount = discount
-    @items = []
-  end
+#   def initialize(discount = 0)
+#     @total = 0
+#     @discount = discount
+#     @items = []
+#   end
 
-  def add_item(item, price, quantity = 1)
-    @price = price
-    @total += price * quantity
-    if quantity > 1
-      counter = 0
-      while counter < quantity
-        @items << item
-        counter += 1
-      end
-    else
-      @items << item
-    end
-  end
+  # def add_item(item, price, quantity = 1)
+  #   @price = price
+  #   @total += price * quantity
+  #   if quantity > 1
+  #     counter = 0
+  #     while counter < quantity
+  #       @items << item
+  #       counter += 1
+  #     end
+  #   else
+  #     @items << item
+  #   end
+  # end
 
   # def apply_discount
   #   if @discount > 0
@@ -71,10 +71,10 @@ class CashRegister
   #   end
   # end
 
-  def void_last_transaction
-    @total -= @price
-  end
+#   def void_last_transaction
+#     @total -= @price
+#   end
 
-end
+# end
  
 
