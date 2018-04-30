@@ -26,7 +26,7 @@ end
     # item_specs[:quantity] = quantity
     # @all_items << item_specs
     # @total += price * quantity
-  end
+ 
   
   def apply_discount
     if @discount == 0 
