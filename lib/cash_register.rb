@@ -14,11 +14,12 @@ class CashRegister
     if counter < quantity
     @all_items << item
     counter += 1
+  end
     else
       @all_items << item
     end
   end
-end
+
     
     # item_specs = {}
     # item_specs[:name_of_item] = item
@@ -37,12 +38,12 @@ end
     end  
   end
 
-
-  
   def void_last_transaction
     @total -= @price
   end
+
 end
+
 
 # class CashRegister
 #   attr_accessor :total, :discount, :price, :items
