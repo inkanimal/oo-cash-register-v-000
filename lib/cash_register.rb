@@ -26,7 +26,7 @@ class CashRegister
   end
   
   def items
-     @cart.values_at(name_of_item)
+     @cart
     
   end
 end
