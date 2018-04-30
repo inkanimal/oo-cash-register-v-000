@@ -9,7 +9,10 @@ class CashRegister
    
   def add_item(item, price, quantity = 1)
     @price = price
-    if 
+    @total += price * quantity
+   
+    while counter < quantity
+    @all_items << item
     # item_specs = {}
     # item_specs[:name_of_item] = item
     # item_specs[:price] = price
