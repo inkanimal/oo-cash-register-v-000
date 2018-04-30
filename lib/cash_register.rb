@@ -28,7 +28,7 @@ class CashRegister
   def items
      list = []
      @cart.each do |item|
-       list << item[:name_of_item]
+       item.flatten
     end
   end
   
