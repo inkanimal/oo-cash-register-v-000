@@ -4,7 +4,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0 
     @discount = discount
-    @cart = []
+    @basket = []
   end
    
   def add_item(item, price, quantity = 1)
@@ -12,7 +12,7 @@ class CashRegister
     item_specs[:name_of_item] = item
     item_specs[:price] = price
     item_specs[:quantity] = quantity
-    @cart << item_specs
+    @basket << item_specs
     @total += price * quantity
   end
   
@@ -27,7 +27,7 @@ class CashRegister
   
   def items
      list = []
-     @cart.each do |item|
+     @basket.each do |item|
        item.flatten
     end
   end
