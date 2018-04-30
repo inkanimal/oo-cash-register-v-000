@@ -43,6 +43,7 @@ class CashRegister
   end
 
 end
+end
 
 
 # class CashRegister
