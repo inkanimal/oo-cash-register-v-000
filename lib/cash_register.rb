@@ -10,23 +10,14 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @price = price
     @total += price * quantity
-    counter = 0
-    if counter < quantity
-    @all_items << item
-    counter += 1
+      counter = 0
+    if counter > 1 && counter < quantity
+      @all_items << item
+      counter += 1
     else
       @all_items << item
     end
   end
-
-    
-    # item_specs = {}
-    # item_specs[:name_of_item] = item
-    # item_specs[:price] = price
-    # item_specs[:quantity] = quantity
-    # @all_items << item_specs
-    # @total += price * quantity
- 
   
   def apply_discount
     if @discount == 0 
@@ -40,7 +31,6 @@ class CashRegister
   def void_last_transaction
     @total -= @price
   end
-
 end
 
 
