@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount, :price
+  attr_accessor :total, :discount, :price, :all_items
  
   def initialize(discount = 0)
     @total = 0 
@@ -8,12 +8,14 @@ class CashRegister
   end
    
   def add_item(item, price, quantity = 1)
-    item_specs = {}
-    item_specs[:name_of_item] = item
-    item_specs[:price] = price
-    item_specs[:quantity] = quantity
-    @all_items << item_specs
-    @total += price * quantity
+    @price = price
+    if 
+    # item_specs = {}
+    # item_specs[:name_of_item] = item
+    # item_specs[:price] = price
+    # item_specs[:quantity] = quantity
+    # @all_items << item_specs
+    # @total += price * quantity
   end
   
   def apply_discount
@@ -25,17 +27,9 @@ class CashRegister
     end  
   end
   
-  def items
-    list = []
-    @all_items.each do |item|
-      item.flatten
-    end
-  end
-  
   def void_last_transaction
     @total -= @price
   end
-  
 end
 
 # class CashRegister
