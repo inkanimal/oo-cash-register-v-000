@@ -12,14 +12,15 @@ class CashRegister
     @total += price * quantity
     counter = 0
     if quantity > 1
-    while counter < quantity
+    && counter < quantity
       @all_items << item
       counter += 1
-    end
+    
     else
       @all_items << item
     end
   end
+end
 
 
   
